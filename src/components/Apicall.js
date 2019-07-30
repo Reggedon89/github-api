@@ -5,7 +5,7 @@ import "../styles/App.css";
 import MaterialIcons from "material-icons-react";
 import Moment from "moment";
 
-export default function App(props) {
+export default function Profile(props) {
   const [uname, setUname] = useState("");
   const [photo, setPhoto] = useState("");
   const [username, setUsername] = useState("");
@@ -30,24 +30,6 @@ export default function App(props) {
 
   return (
     <div id="container">
-      {/* <header className="header">
-        <div className="logo" />
-        <form>
-          <input type="text" placeholder="Search or jump to..." />
-        </form>
-        <ul className="requests">
-          <li>Pull Requests</li>
-          <li>Issues</li>
-          <li>Marketplace</li>
-          <li>Explore</li>
-        </ul>
-        <ul className="additional">
-          <li>bell</li>
-          <li>plus</li>
-          <li>profile</li>
-        </ul>
-      </header> */}
-
       <aside className="userprofile">
         <img src={photo} alt="handsome guy" />
         <h1>{uname}</h1>
@@ -57,40 +39,10 @@ export default function App(props) {
           <MaterialIcons icon="location_on" />
           {location}
         </h3>
-        <button>
-          <span>Edit Profile</span>
-        </button>
       </aside>
 
       <main className="repolist">
-        <div className="options">
-          <ul>
-            <li>Overview</li>
-            <li>Repositories</li>
-            <li>Projects</li>
-            <li>Stars</li>
-            <li>Followers</li>
-            <li>Following</li>
-          </ul>
-        </div>
-        <div className="searchBar">
-          <form>
-            <input type="text" placeholder="Find a repository.." />
-            <select>
-              <option selected>Type:All</option>
-              <option>Public</option>
-              <option>Private</option>
-            </select>
-            <select>
-              <option seleceted>Launguage:All</option>
-              <option>English</option>
-              <option>Spanish</option>
-              <option>German</option>
-              <option>Whatever</option>
-            </select>
-            <button>New</button>
-          </form>
-        </div>
+        <h1>My Repositories</h1>
         <div>
           {repo.map(obj => (
             <div key={obj.name} className="list">
@@ -119,3 +71,5 @@ export default function App(props) {
     </div>
   );
 }
+
+// export default Profile;
