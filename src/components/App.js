@@ -77,12 +77,12 @@ export default function App(props) {
           <form>
             <input type="text" placeholder="Find a repository.." />
             <select>
-              <option selected>Type:All</option>
+              <option defaultValue>Type:All</option>
               <option>Public</option>
               <option>Private</option>
             </select>
             <select>
-              <option seleceted>Launguage:All</option>
+              <option defaultValue>Launguage:All</option>
               <option>English</option>
               <option>Spanish</option>
               <option>German</option>
