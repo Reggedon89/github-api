@@ -14,7 +14,7 @@
     "react-dom": "^16.8.6",
     "react-router-dom": "^5.0.1",
     "react-scripts": "3.0.1",
-    "validator": "^11.1.0"
+    "validator": "^13.7.0"
   },
   "scripts": {
     "start": "concurrently \"json-server --watch -p 3001 -r routes.json default.json\" \"react-scripts start\"",
